@@ -1,4 +1,4 @@
-# Use this hook to configure devise mailer, warden hooks and so forth.
+# Use this hook to configure deviseOLD mailer, warden hooks and so forth.
 # Many of these configuration options can be set straight in your model.
 Devise.setup do |config|
   # The secret key used by Devise. Devise uses this key to generate
@@ -10,7 +10,7 @@ Devise.setup do |config|
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class
   # with default "from" parameter.
-  config.mailer_sender = 'please-change-me-at-config-initializers-devise@example.com'
+  config.mailer_sender = 'please-change-me-at-config-initializers-deviseOLD@example.com'
 
   # Configure the class responsible to send e-mails.
   # config.mailer = 'Devise::Mailer'
@@ -122,7 +122,7 @@ Devise.setup do |config|
   config.reconfirmable = true
 
   # Defines which key will be used when confirming an account
-  # config.confirmation_keys = [ :email ]
+  config.confirmation_keys = [ :login ]
 
   # ==> Configuration for :rememberable
   # The time the user will be remembered without asking for credentials again.
@@ -181,7 +181,7 @@ Devise.setup do |config|
   # ==> Configuration for :recoverable
   #
   # Defines which key will be used when recovering the password for an account
-  # config.reset_password_keys = [ :email ]
+  config.reset_password_keys = [ :login ]
 
   # Time interval you can reset your password with a reset password key.
   # Don't put a too small interval or your users won't have the time to
@@ -195,7 +195,7 @@ Devise.setup do |config|
   # and :restful_authentication_sha1 (then you should set stretches to 10, and copy
   # REST_AUTH_SITE_KEY to pepper).
   #
-  # Require the `devise-encryptable` gem when using anything other than bcrypt
+  # Require the `deviseOLD-encryptable` gem when using anything other than bcrypt
   # config.encryptor = :sha512
 
   # ==> Scopes configuration
@@ -205,7 +205,7 @@ Devise.setup do |config|
   # config.scoped_views = false
 
   # Configure the default scope given to Warden. By default it's the first
-  # devise role declared in your routes (usually :user).
+  # deviseOLD role declared in your routes (usually :user).
   # config.default_scope = :user
 
   # Set this configuration to false if you want /users/sign_out to sign out

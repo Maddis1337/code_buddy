@@ -1,4 +1,4 @@
-// Temporary workaround for Rails 4.1.2 pending releaase of bootstrap-sass 3.1.2
+// Temporary workaround for Rails 4.1.2 pending release of bootstrap-sass 3.1.2
 //= depend_on_asset "bootstrap/glyphicons-halflings-regular.eot"
 //= depend_on_asset "bootstrap/glyphicons-halflings-regular.svg"
 //= depend_on_asset "bootstrap/glyphicons-halflings-regular.ttf"
@@ -40,7 +40,6 @@ img {
 // to make views framework-neutral
 main {
   @extend .container;
-  background-color: #eee;
   padding-bottom: 80px;
   width: 100%;
   margin-top: 51px; // accommodate the navbar
@@ -84,4 +83,18 @@ section {
   @extend .btn;
   @extend .btn-primary;
   @extend .btn-xs;
+}
+
+// custom
+.button {
+  @extend .btn;
+  @extend .btn-default;
+}
+input[type=submit] {
+  @extend .btn;
+  @extend .btn-primary;
+}
+
+.field_with_errors {
+  @extend .has-error;
 }

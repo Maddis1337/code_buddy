@@ -9,10 +9,11 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
-gem 'webrat'
-gem 'rails_layout'
-gem 'bootstrap-sass'
-gem 'devise'
+gem 'webrat' # acceptance tests
+gem 'rails_layout' # generates layout files ready for devise and bootstrap, not used anymore
+gem 'bootstrap-sass' # bootstrap 3.0 css framework
+gem 'devise' # authentication
+#gem 'simple_form' # simple, but powerful form generator
 
 group :doc do
   gem 'sdoc', require: false
